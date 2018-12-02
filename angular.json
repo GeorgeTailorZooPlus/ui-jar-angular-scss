@@ -23,10 +23,15 @@
               "src/assets"
             ],
             "styles": [
-			  "src/styles.css",
-			  "src/styles/variables.scss"
+              "src/styles.scss",
+              "src/styles/_variables.scss"
             ],
-            "scripts": []
+			"scripts": [],
+			"stylePreprocessorOptions": {
+				"includePaths": [
+				  "src/styles"
+				]
+			}
           },
           "configurations": {
             "production": {
@@ -73,7 +78,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
